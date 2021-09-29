@@ -5,5 +5,15 @@
 # Calculate the product of all of the numbers in the list.
 
 from resources import randlist
-
 print(randlist)
+
+highest_num = randlist[0] # Sets first number as the highest number
+
+for num in randlist: # Iterates over all the nums in the list
+    if num>highest_num:
+        highest_num = num # Replaces the highest num if num is higher
+
+print(highest_num)
+
+
+

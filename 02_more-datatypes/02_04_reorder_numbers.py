@@ -6,3 +6,13 @@
 #
 # Example input:  1,2,3,4,5,6,7,8,9,10
 # Example output: 2,4,6,8,10,9,7,5,3,1
+
+input_string = input("Please etner 10 numbers seperated by space: \n")
+
+user_list = input_string.split()
+print("Your List: ", user_list)
+
+print(user_list[1::2])
+print(user_list[-2::-2])
+
+
