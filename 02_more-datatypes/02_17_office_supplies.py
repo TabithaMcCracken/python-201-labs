@@ -22,3 +22,12 @@ office = [
     {"full_name": "Creed Bratton", "item": "mung beans"},
     {"full_name": "Darryl Philbin", "item": "forklift"},
 ]
+
+for entry in office:
+    if entry['full_name']:
+        split_name = entry['full_name'].split()
+        last_name = split_name[-1].upper()
+        first_name = split_name[0]
+    print(f"{last_name}, {first_name}\t{entry['item']}")
+
+# Need to figure out how to do the spacing

@@ -16,3 +16,20 @@ famous_quotes = [
     {"full_name": "Nathan Myhrvold", "quote": "Software is a gas; it expands to fill its container."},
     {"full_name": "Alan Bennett", "quote": "Standards are always out of date.  That’s what makes them standards."}
 ]
+
+# Seperates the first name from the last name- incomplete
+
+# Not sure how to do this if there is a middle initial, can i still use split?
+
+# Loop through each dictionary in the list
+for dicts in famous_quotes:
+    # Loop through each value in full name
+    print(famous_quotes.values["full_name"])
+    # If it's a letter add it to a new list ?
+    # If the value is a space, stop
+
+
+# Prints the quote and the name
+for dicts in famous_quotes:
+    print(f"{dicts.get('quote')} - {dicts.get('full_name')}")
+    print(i)
