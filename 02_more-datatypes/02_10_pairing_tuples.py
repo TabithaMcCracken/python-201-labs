@@ -37,13 +37,20 @@ list_length = len(number_list)
 
 list_range = range(0, list_length ,2)
 for i in list_range:
-    list_slice = number_list [i:i+1] + number_list [i+1:i+2]
-    print(list_slice)
+    list_slice = number_list [i], number_list [i+1]
+    print(f"Here is the new slice: {list_slice}")
     final_list.append(list_slice) 
 
 print(final_list)
 
+# for i in range(len(randlist) // 2):
+    
+#     index_1 = i + 2
+#     index_2 = index_1 + 1
 
+#     new_tuple = randlist[index_1], randlist[index_2]
+#     tuple_list.append(new_tuple)
+#     print(new_tuple)
 
 # I googled some other solutions for this, this one works, so I am trying to figure out 
 # exactly how it works :-)
@@ -60,20 +67,3 @@ n = 2 # The number of items we want in each tuple
 x = list(pairs(number_list, n)) # Makes a list of the tuples
 print("Here is what it looks like with a function: ")
 print(x)
-
-
-
-
-
-
-
-
-
-
-
-# Creating tuples from a list (Adding the letter "D" to each letter)
-
-# lst = ['A', 'B', 'C']
-# lst2= [(x, 'D') for x in lst]
-# print(lst2)
-
