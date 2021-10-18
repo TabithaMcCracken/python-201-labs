@@ -41,7 +41,7 @@ pprint.pprint(file_dict)
 # Makes new folders if the file values are greater than 5
 for filepath in desktop.iterdir():
     # Filter for .jpg files
-    if filepath.suffix == ".jpg" and file_dict[".jpg"] > 5:
+    if file_dict[filepath.suffix] > 5:
         # Create new folder
         jpg_folder.mkdir(exist_ok=True)
         # Create new path for each file

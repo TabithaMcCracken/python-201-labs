@@ -24,8 +24,7 @@ office = [
 ]
 
 for entry in office:
-    if entry['full_name']:
-        split_name = entry['full_name'].split()
-        last_name = split_name[-1].upper()
-        first_name = split_name[0]
+    split_name = entry['full_name'].split()
+    last_name = split_name[-1].upper()
+    first_name = split_name[0]
     print(f"{last_name}, {first_name:<10} \t{entry['item']}")
