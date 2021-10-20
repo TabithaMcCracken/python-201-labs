@@ -35,17 +35,17 @@ import pprint
 # with open("/Users/tabithamccracken/Desktop/output.txt", "r") as file_in:
 #   print(file_in.read())
 
-import csv
+# import csv
 
-count = {"": 8, ".csv": 2, ".md": 2, ".png": 11}
+# count = {"": 8, ".csv": 2, ".md": 2, ".png": 11}
 
 
-with open("filecounts2.csv", "a") as csvfile:
-    # Adds column names
-    writer = csv.DictWriter(csvfile, fieldnames = ['Col1', 'Col2', 'Col3', 'Col4'])
-    writer.writeheader()
+# with open("filecounts2.csv", "a") as csvfile:
+#     # Adds column names
+#     writer = csv.DictWriter(csvfile, fieldnames = ['Col1', 'Col2', 'Col3', 'Col4'])
+#     writer.writeheader()
 
-    # Adds the counts for each file type
-    countwriter = csv.writer(csvfile)
-    data = [count[""], count[".csv"], count[".md"], count[".png"]]
-    countwriter.writerow(data)
+#     # Adds the counts for each file type
+#     countwriter = csv.writer(csvfile)
+#     data = [count[""], count[".csv"], count[".md"], count[".png"]]
+#     countwriter.writerow(data)
