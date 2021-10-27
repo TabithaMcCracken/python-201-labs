@@ -13,7 +13,7 @@ with open (file_path, "r") as file:
 
 # Print words with more than 20 characters
 print("Here are the words that have 20 or more characters: ")
-for i in range(len(word_list)):
-    if len(word_list[i]) > 20:
-        print(word_list[i])
+for i in range(len(word_list)): # for word in word_list:
+    if len(word_list[i]) > 20: # if len(word)
+        print(word_list[i]) # print(word)
 

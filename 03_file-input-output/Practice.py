@@ -49,3 +49,20 @@ import pprint
 #     countwriter = csv.writer(csvfile)
 #     data = [count[""], count[".csv"], count[".md"], count[".png"]]
 #     countwriter.writerow(data)
+
+# Functions
+
+# def greeting(greeting, name):
+#     sentence = f"{greeting}, {name}! How are you?"
+#     return sentence
+
+# print(greeting(2,3))
+
+def greet_many(greeting, *args):
+    greetings = ""
+    for name in args:
+        sentence = f"{greeting}, {name}! How are you?"
+        greetings += sentence + "\n"
+    return greetings
+
+print(greet_many(greeting = "Hi!", "Kelly", "Jon"))
