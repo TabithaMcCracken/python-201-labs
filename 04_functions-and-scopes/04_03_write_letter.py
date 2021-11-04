@@ -8,5 +8,9 @@ def write_letter(name, text):
     letter = f"Dear {name}, {text} See you soon {name}!"
     return letter
 
-complete_letter = write_letter("Bob", "Thank you reaching out. I can't wait to see you.")
+complete_letter = write_letter(
+    name = "Bob", 
+    text = "Thank you reaching out. I can't wait to see you."
+)
+
 print(complete_letter)
