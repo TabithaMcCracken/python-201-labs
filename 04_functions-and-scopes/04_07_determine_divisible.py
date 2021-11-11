@@ -12,13 +12,20 @@
 def four_or_seven (user_num):
     """Determines whether num is divisible by 4 or 7"""
 
-    if user_num % 7 or user_num % 4 == True:
+    if user_num % 7 == 0 or user_num % 4 == 0:
         flag = True
     else:
         flag = False
     return flag
 
-# answer = four_or_seven(42)
+def four_and_seven(user_num):
+    """Determines whether num is divisible by 4 and 7"""
+
+    if user_num % 7 == 0 and user_num % 4 == 0:
+        flag = True
+    else:
+        flag = False
+    return flag
 
 flag = False
 min = 1
@@ -29,5 +36,14 @@ while flag == False:
     if user_num >= min and user_num <= max:
             flag = True
 
-boolean_response = four_or_seven(user_num)
-print(boolean_response)
+or_response = four_or_seven(user_num)
+if or_response == True:
+    print("Your number is divisible by either 7 or 4.")
+else:
+    print("Your number is not divisibale by 7 or 4.")
+
+and_response = four_and_seven(user_num)
+if and_response == True:
+    print("Your number is divisiable by 7 and 4.")
+else:
+    print("Your number is not divisble by both 7 and 4.")
