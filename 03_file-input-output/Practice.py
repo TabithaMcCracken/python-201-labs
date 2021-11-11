@@ -58,11 +58,50 @@ import pprint
 
 # print(greeting(2,3))
 
-def greet_many(greeting, *args):
-    greetings = ""
-    for name in args:
-        sentence = f"{greeting}, {name}! How are you?"
-        greetings += sentence + "\n"
-    return greetings
+# def greet_many(greeting, *args):
+#     greetings = ""
+#     for name in args:
+#         sentence = f"{greeting}, {name}! How are you?"
+#         greetings += sentence + "\n"
+#     return greetings
 
-print(greet_many(greeting = "Hi!", "Kelly", "Jon"))
+# print(greet_many(greeting = "Hi!", "Kelly", "Jon"))
+
+
+
+# # Functionality to capitalize eache word
+# def titlecase (text):
+#     titlecase = []
+#     for word in text.split():
+#         cap_word = word.capitalize()
+#         titlecase.append(cap_word)
+#     return " ".join(titlecase)
+
+# user_input = input("Enter your sentence (Type exit to quit): ")
+
+# # Give output to user
+# while user_input.lower() != "exit":
+#     crash_blossom = titlecase(user_input)
+#     print(titlecase(crash_blossom))
+#     user_input = input("Enter your sentence (Type exit to quit): ")
+
+# Enumerate!
+
+locations = ["indonesia", "spain", "thailand", "mexico"]
+
+for index, country in enumerate(locations, start=1):
+    print(f"* {index}: {country}")
+
+# Create my own enumerate function
+def my_enumerate(a_list):
+    result = [] #Creates an empty list to store the index and value as tuples
+    counter = 0
+    for item in a_list:
+        result.append((counter, item))
+        counter +=1
+    return result
+
+my_list = (my_enumerate(locations))
+
+for index, country in my_list:
+    print(f"{index}: {country}")

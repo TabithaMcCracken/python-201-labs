@@ -5,14 +5,17 @@
 # Fix the errors by changing the inputs to your function calls, then confirm that 
 # checking your script with mypy now passes all tests.
 
-# def greet(greeting: str, name: str):
-#     """Generates a greeting."""
-#     sentence = f"{greeting}, {name}! How are you?"
-#     return sentence
+def greet(greeting: str, name: str):
+    """Generates a greeting."""
+    sentence = f"{greeting}, {name}! How are you?"
+    return sentence
 
-# full_sentence = greet("Howdy", 78)
-# print(full_sentence)
+full_sentence = greet("Howdy", 78)
+print(full_sentence)
 
-my_list = ["apple", "banana", "orange"]
-obj1 = enumerate(my_list)
-print(obj1)
+
+
+
+# my_list = ["apple", "banana", "orange"]
+# obj1 = enumerate(my_list)
+# print(obj1)
