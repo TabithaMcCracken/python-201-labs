@@ -15,3 +15,12 @@
 
 base = 10
 digits = set(range(base))
+
+# First Attempt using base 10
+# dict_ = { num: [int(num/100), int(num/10)%10, num%10] for num in range (0,1000)}
+# print(dict_)
+
+# Second Attempt- I had to google this to come up with the x,y,z approach. Still not 
+# sure how the comprehension knows what the x,y,and z represent
+dict_2 = {(x*base**2 + y*base**1 + z*base**0): [x,y,z] for x in digits for y in digits for z in digits}
+print(dict_2)

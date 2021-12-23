@@ -10,3 +10,12 @@
 
 s = {1, 2, 3, 4}
 t = {2, 3, 4, 5, 7}
+
+# First Attempt, but doesn't use union()
+new_set = {num*num for num in s if num>2 for num in t if num>2}
+print(new_set)
+
+# Second attempt with union()
+
+new_set_2 = {num*num for num in s.union(t) if num>2}
+print(new_set_2)

@@ -3,3 +3,8 @@
 
 colors = ["neon orange", "spring green"]
 sizes = ["S", "M", "L"]
+
+products = []
+
+list_ = [products.append(color + " " + size) for color in colors for size in sizes]
+print(products)
