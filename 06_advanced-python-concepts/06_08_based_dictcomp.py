@@ -17,6 +17,7 @@ base = 10
 digits = set(range(base))
 
 # First Attempt using base 10
+
 # dict_ = { num: [int(num/100), int(num/10)%10, num%10] for num in range (0,1000)}
 # print(dict_)
 
