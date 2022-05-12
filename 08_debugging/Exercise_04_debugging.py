@@ -41,7 +41,7 @@ def create_new_user():
 
 # Update email address
 def update_email():
-    user_id = input("What is your user id?")
+    user_id = int(input("What is your user id?"))
     new_email = input("What is your new email address?")
     user_data = get_users()
     user_filter_data = user_data["data"]
@@ -52,16 +52,18 @@ def update_email():
         user_access = data["id"]
         if user_access == user_id:
             first_name = data["first_name"]
+            print(f"Your first name is: {first_name}")
             last_name = data["last_name"]
+            print(f"Your last name is: {last_name}")
 
-    body2 = {
+    body = {
         "id": user_id,
         "email": new_email,
         "first_name": first_name,
         "last_name": last_name
     }
 
-    response = requests.put(base_url, json= body2)
+    response = requests.put(base_url, json= body)
     if response.status_code == 201 or response.status_code == 200:
         print("Your new email has been saved.")
     else:
