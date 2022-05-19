@@ -62,8 +62,9 @@ def update_email():
         "first_name": first_name,
         "last_name": last_name
     }
+    url = f"http://demo.codingnomads.co:8080/tasks_api/users/{user_id}"
+    response = requests.put(url, json=body)
 
-    response = requests.put(base_url, json= body)
     if response.status_code == 201 or response.status_code == 200:
         print("Your new email has been saved.")
     else:
@@ -81,4 +82,18 @@ else:
     print("We're sorry that you have chosen to do nothing, have a nice day!")
 
 
+# Original solution
+# base_url = "http://demo.codingnomads.co:8080/tasks_api/users"
 
+# body = {
+#     "id": 183,
+#     "first_name": "Tabitha",
+#     "last_name": "Mccracker",
+#     "email": "tabimccrack@aol.com"
+# }
+
+# response = requests.put(base_url, json=body)
+# print(response.status_code)
+
+# response = requests.get(base_url)
+# print(response.content)

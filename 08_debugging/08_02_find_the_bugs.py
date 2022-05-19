@@ -9,7 +9,7 @@ for x in range(0, len(unsorted_list)): # Mistake
     index = 0
 
     for i in range(0, len(unsorted_list)): # Mistake
-        if unsorted_list[i][1] < minimum:
+        if unsorted_list[i][1] < minimum: # Mistake
             minimum = unsorted_list[i][i]
             index = i
     sorted_list.append(unsorted_list[index])

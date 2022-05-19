@@ -10,7 +10,7 @@ b = [2,3]
 l = [a,b]
 
 # for i in l:
-#     i = [elem for elem in l if elem != 2]
+#     i[:] = [elem for elem in l if elem != 2]
 # print (l)
 
 
